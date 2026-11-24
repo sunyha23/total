@@ -91,7 +91,8 @@
   .cam.live video{display:block}
   .cam.eyesmode video{display:none!important}
   #eyes{width:250px;height:80px;display:block;margin:14px -6px 0 auto}
-  #eyes.crop{margin-right:0;outline:1px solid #e6e6e6}
+  #eyes{visibility:hidden}
+  #eyes.crop{visibility:visible;margin-right:0;outline:1px solid #e6e6e6}   /* 캠이 연결돼 눈을 찾았을 때만 보임 */
   .camst{display:none}
   .camst b{color:var(--ink);font-weight:400}
   .camb{font-family:var(--kr-m);font-size:13px;background:none;border:1px solid var(--sub);color:var(--ink);padding:3px 8px;cursor:pointer}
@@ -154,7 +155,7 @@
   <div class="clock">
     <div class="c" id="clock">23:00</div>
     <div class="clabel" id="clabel">취침 시간</div>
-    <div class="guide">눈을 <b>뜨고 버틸수록</b> 졸음(Z)이 쌓여 추가 올라가요.<br>눈을 <b>깜빡이는 순간</b> 잠들고, 버틴 만큼 잠(S)이 쏟아져요.</div>
+    <div class="guide">눈을 <b>뜨고 버틸수록</b> 졸음(Z)이 쌓여 추가 올라간다.<br>눈을 <b>깜빡이는 순간</b> 잠들고, 버틴 만큼 잠(S)이 쏟아진다.</div>
     <div class="chips"><span id="chipA">눈 뜨기 = 밤새우기</span><span id="chipB">눈 깜빡 = 잠들기</span></div>
     <div class="cam eyesmode" id="cam">
       <video id="vid" playsinline muted></video>
